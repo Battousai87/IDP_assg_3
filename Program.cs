@@ -30,6 +30,10 @@
             gold.meltingPoint = 1337.33;
             gold.boilingPoint = 3243;
 
+            oxygen.Print();
+            iron.Print();
+            gold.Print();
+
         }
     }
 
@@ -41,6 +45,15 @@
         public string type;
         public double meltingPoint;
         public double boilingPoint;
+
+        public void Print() {
+            Console.WriteLine($"Element: {name}");
+            Console.WriteLine($"  Type: {type}");
+            Console.WriteLine($"  Melting point: {meltingPoint}");
+            Console.WriteLine($"  Boiling point: {boilingPoint}");
+        }
+
+
     }
 
 }
