@@ -1,4 +1,7 @@
-﻿namespace git_objects
+﻿using System.Xml.Linq;
+using git_objects;
+
+namespace git_objects
 {
     internal class Program
     {
@@ -34,6 +37,38 @@
             iron.Print();
             gold.Print();
 
+            Element[] elements = new Element[6]
+            {
+                oxygen, 
+                iron, 
+                gold,
+                new Element()
+                {
+                    name = "hydrogen",
+                    z = "1",
+                    type = "non-metal",
+                    meltingPoint = 13.99,
+                    boilingPoint = 20.271,
+                },
+                new Element()
+                {
+                    name = "bromine",
+                    z = "35",
+                    type = "non-metal",
+                    meltingPoint = 265.8,
+                    boilingPoint = 332.0,
+                },
+                new Element()
+                {
+                    name = "mercury",
+                    z = "80",
+                    type = "metal",
+                    meltingPoint = 234.310,
+                    boilingPoint = 629.88,
+                },
+            };
+
+
         }
     }
 
@@ -57,3 +92,32 @@
     }
 
 }
+
+
+
+
+
+new Element()
+{
+    name = "gold";
+                    z = "79";
+                    type = "metal";
+                    meltingPoint = 1337.33;
+                    boilingPoint = 3243;
+                }
+                new Element()
+                {
+                    name = "gold";
+                    z = "79";
+                    type = "metal";
+                    meltingPoint = 1337.33;
+                    boilingPoint = 3243;
+                }
+                new Element()
+                {
+                    name = "gold";
+                    z = "79";
+                    type = "metal";
+                    meltingPoint = 1337.33;
+                    boilingPoint = 3243;
+                }
