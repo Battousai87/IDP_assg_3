@@ -86,6 +86,17 @@ namespace git_objects
                 
             }
 
+            Console.WriteLine("\nOnly elements melting bellow 273.16k(0°C) and boiling point above 273.16k.");
+
+            foreach (Element elem in elements)
+            {
+                if (elem.meltingPoint < 273.16 && elem.boilingPoint > 273.16)
+                {
+                    Console.WriteLine(elem.name);
+                }
+
+            }
+
 
         }
     }
