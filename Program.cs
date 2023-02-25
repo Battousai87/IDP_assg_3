@@ -76,6 +76,16 @@ namespace git_objects
                 Console.WriteLine(elem.name);
             }
 
+            Console.WriteLine("\nOnly metal types:");
+
+            foreach (Element elem in elements)
+            {
+                if (elem.type == "metal") {
+                    Console.WriteLine(elem.name);
+                }
+                
+            }
+
 
         }
     }
