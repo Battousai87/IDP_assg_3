@@ -37,6 +37,7 @@ namespace git_objects
             iron.Print();
             gold.Print();
 
+            //skapa arrayen:
             Element[] elements = new Element[6]
             {
                 oxygen, 
@@ -68,6 +69,13 @@ namespace git_objects
                 },
             };
 
+            Console.WriteLine(); //Create blankrow for better readability in terminal.
+
+            foreach (Element elem in elements)
+            {
+                Console.WriteLine(elem.name);
+            }
+
 
         }
     }
@@ -92,32 +100,3 @@ namespace git_objects
     }
 
 }
-
-
-
-
-
-new Element()
-{
-    name = "gold";
-                    z = "79";
-                    type = "metal";
-                    meltingPoint = 1337.33;
-                    boilingPoint = 3243;
-                }
-                new Element()
-                {
-                    name = "gold";
-                    z = "79";
-                    type = "metal";
-                    meltingPoint = 1337.33;
-                    boilingPoint = 3243;
-                }
-                new Element()
-                {
-                    name = "gold";
-                    z = "79";
-                    type = "metal";
-                    meltingPoint = 1337.33;
-                    boilingPoint = 3243;
-                }
